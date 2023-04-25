@@ -1,29 +1,46 @@
 import * as React from 'react';
+import { Card, CardContent, CardMedia, Typography } from '@mui/material';
+
 
 export default function Details() {
     return (
         <>
             <div className='container mt-2'>
-                <div className="card mb-3" style={{ width: "640px", height: "300px" }} >
-                    <div className="row g-0">
-                        <div className="col-md-4">
-                            <img src="..." className="img-fluid rounded-start" alt="..." />
+                <Card>
+                    <div className='row'>
+                        <div className='col-3 mt-2 mb-2 ml-2 mr-2'>
+                            <CardMedia
+                                style={{ height: '99%', width: '70%', paddingTop: '1.25%', paddingLeft: '1.25%' }}
+                                image="https://via.placeholder.com/150"
+                                title="User Profile Picture"
+                            />
                         </div>
-                        <div className="col-md-8">
-                            <div className="card-body">
-                                <h4 className="card-title">Manish Yadav</h4>
-                                <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p className="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
+                        <div className='col-8'>
+                            <CardContent>
+                                <h3>Manish Yadav</h3>
+                                <Typography variant="body2" color="textSecondary" component="p">
+                                    <strong> Name:</strong> John Doe
+                                </Typography>
+                                <Typography variant="body2" color="textSecondary" component="p">
+                                    <strong>Email:</strong> johndoe@example.com
+                                </Typography>
+                                <Typography variant="body2" color="textSecondary" component="p">
+                                    <strong> Mobile:</strong> +1 1234567890
+                                </Typography>
+                                <Typography variant="body2" color="textSecondary" component="p">
+                                    <strong> Address:</strong> 123 Main St, Anytown USA 12345
+                                </Typography>
+                                <Typography variant="body2" color="textSecondary" component="p">
+                                    <strong> Occupation:</strong> Software Engineer
+                                </Typography>
+                            </CardContent>
                         </div>
                     </div>
-                <div className='row g-0 mt-5 align-content-center justify-content-center'>
-                    <div className='col-3'>
-                        <button className='btn btn-sm btn-info'>Share</button>
-                    </div>
-                </div>
-                </div>
+
+                </Card>
+
             </div>
         </>
     );
 }
+

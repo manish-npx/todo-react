@@ -3,6 +3,7 @@ import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import ModeEditIcon from '@mui/icons-material/ModeEdit';
 import RestoreFromTrashIcon from '@mui/icons-material/RestoreFromTrash';
 
+
 function Home() {
     return (
         <>
@@ -22,7 +23,7 @@ function Home() {
 
             <div className="container-fluid justify-content-md-end ml-5 pl-5 pt-3 mt-3">
                 <table className="table">
-                <thead className="table-dark">
+                    <thead className="table-dark">
                         <tr>
                             <th scope="col">Id</th>
                             <th scope="col">UserName</th>
@@ -35,15 +36,15 @@ function Home() {
                     <tbody>
                         <tr>
                             <th scope="row">1</th>
-                            <td>Otto</td>
-                            <td>manish@mdo</td>
+                            <td>Manish</td>
+                            <td>manish@gmail.com</td>
                             <td>Software Developer</td>
                             <td>11111111111</td>
                             <td>
-                            <div className="d-grid gap-2 d-md-flex">
-                                <button  type="button" className='btn btn-sm btn-success'>< RemoveRedEyeIcon /></button>
-                                <button  type="button" className='btn btn-sm btn-primary'>< ModeEditIcon /></button>
-                                <button  type="button" className='btn btn-sm btn-danger'><RestoreFromTrashIcon /></button>
+                                <div className="d-grid gap-2 d-md-flex">
+                                    <button type="button" className='btn btn-sm btn-success'>< RemoveRedEyeIcon /></button>
+                                    <button type="button" className='btn btn-sm btn-primary'>< ModeEditIcon /></button>
+                                    <button type="button" className='btn btn-sm btn-danger'><RestoreFromTrashIcon /></button>
                                 </div>
                             </td>
                         </tr>
@@ -51,6 +52,7 @@ function Home() {
                 </table>
             </div>
 
+          
         </>
     )
 }
